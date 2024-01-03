@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #375144;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.header-logo:link,
+.header-logo:visited {
+  font-family: "Eater", sans-serif;
+  color: #f0bc70;
+  text-decoration: none;
+  font-size: 3.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.man-nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #f0bc70;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
