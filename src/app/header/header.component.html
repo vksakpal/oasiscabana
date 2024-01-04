@@ -2,10 +2,43 @@
   <a class="header-logo" href="#"> Oasis Cabana </a>
   <nav class="main-nav">
     <ul class="man-nav-list">
-      <li><a class="main-nav-link" href="#">Upcoming Events</a></li>
-      <li><a class="main-nav-link" href="#">Location</a></li>
-      <li><a class="main-nav-link" href="#">Contacts Us</a></li>
-      <li><a class="main-nav-link" href="#">Testimonials</a></li>
+      <li>
+        <a
+          class="main-nav-link"
+          routerLink="."
+          fragment="upcomingevents"
+          (click)="goto('upcomingevents')"
+          >Upcoming Events</a
+        >
+      </li>
+      <li>
+        <a
+          class="main-nav-link"
+          routerLink="."
+          fragment="Location"
+          (click)="goto('location')"
+          >Location</a
+        >
+      </li>
+
+      <li>
+        <a
+          class="main-nav-link"
+          routerLink="."
+          fragment="Testimonials"
+          (click)="goto('testimonials')"
+          >Testimonials</a
+        >
+      </li>
+      <li>
+        <a
+          class="main-nav-link"
+          routerLink="."
+          fragment="contactus"
+          (click)="goto('cta')"
+          >Contacts Us</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
