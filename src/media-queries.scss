@@ -1,0 +1,367 @@
+// Below 1344px
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .grid-location {
+    column-gap: 1.2rem !important;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem !important;
+  }
+
+  .hero {
+    gap: 4.8rem !important;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem !important;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50% !important;
+  }
+
+  .mapouter {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .grid-location {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery-item {
+    width: 17rem !important;
+    height: 17rem !important;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr) !important;
+    justify-items: center !important;
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block !important;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block !important;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none !important;
+  }
+
+  // .icon-mobile-nav[name="menu-outline"] {
+  //   display: block !important;
+  // }
+
+  .man-nav-list {
+    flex-direction: column !important;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  #gmap_canvas {
+    width: 100% !important;
+    height: 50rem !important;
+  }
+}
+
+@media (max-width: 56em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .gallery-item {
+    width: 17rem !important;
+    height: 17rem !important;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .logo-col {
+    flex-direction: row !important;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem !important;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .testimonial-text {
+    margin-right: 1.2rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/**************************/
+/* BELOW 602px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 37em) {
+  .gallery-item {
+    width: 13rem !important;
+    height: 13rem !important;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem !important;
+  }
+
+  .gallery-item {
+    width: 9.5rem !important;
+    height: 9.5rem !important;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr !important;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem !important;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0 !important;
+  }
+
+  .hero {
+    padding: 0 3.2rem !important;
+  }
+
+  .hero-img {
+    width: 80% !important;
+  }
+
+  .logos img {
+    height: 1.2rem !important;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1 !important;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5 !important;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem) !important;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.2rem !important;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem !important;
+  }
+
+  .cta-img-box {
+    height: 32rem !important;
+    grid-row: 1 !important;
+  }
+}

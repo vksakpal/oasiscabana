@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" [ngClass]="{ 'nav-open': isNavOpen }">
   <a class="header-logo" href="#"> Oasis Cabana </a>
   <nav class="main-nav">
     <ul class="man-nav-list">
@@ -41,4 +41,8 @@
       </li>
     </ul>
   </nav>
+  <button class="btn-mobile-nav" (click)="toggleMobileNavButton()">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+  </button>
 </header>

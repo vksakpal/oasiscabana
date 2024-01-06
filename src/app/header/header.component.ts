@@ -9,7 +9,15 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private scroller: ViewportScroller, private router: Router) {}
+
+  isNavOpen: boolean = false;
+
   goto(fragment: any) {
     this.router.navigate([], { fragment: fragment });
+    this.isNavOpen = !this.isNavOpen;
+  }
+
+  toggleMobileNavButton() {
+    this.isNavOpen = !this.isNavOpen;
   }
 }
